@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+body {
+    background : $darkBlue;
+}
+.Album {
+    .AlbumHeader {
+        padding: 30px 20px 0;
+    }
+    h1 {
+        color: #D1DFEF;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+        margin: 0 0 30px 0;
+    }
+    .filters {
+        display: flex;
+        align-items: flex-start;
+        input {
+            border: 1px solid $lighterBlue;
+            color: $lighterBlue;
+            background-color: transparent;
+            padding: 7px 10px;
+            border-radius: 3px;
+            outline: none;
+            color:  $lightestBlue;
+            margin-right: 20px;
+            font-size: 14px;
+            margin-right: 20px;
+            border: 1px solid #617E9E;
+            width: 270px;
+            height: 35px;
+            &:active, &:focus, &:visited, &:focus-visible ,&:focus {
+                border: 1px solid #fff;
+            }
+            &::placeholder {
+                color:  #617E9E;
+            }
+        }
+        select{
+            border: 1px solid $lighterBlue;
+            color: $lighterBlue;
+            background-color: transparent;
+            padding: 7px 10px;
+            border-radius: 3px;
+            outline: none;
+            color:  $lightestBlue;
+            font-size: 14px;
+            border: 1px solid #617E9E;
+            line-height: 1;
+            &:active, &:focus, &:visited, &:focus-visible ,&:focus {
+                border: 1px solid #fff;
+            }
+        }
+    }
+    .AlbumMain {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+}

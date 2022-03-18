@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.Photo {
+    width: 25%;
+    padding: 10px;
+    .PhotoCont {
+        cursor: pointer;
+        background: $lightBlue;
+        padding: 3px;
+    }
+    .PhotoHeader {
+        background: #345979;
+        padding: 12px;
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .PhotoMain {
+        text-align: center;
+        padding: 22px 12px;
+        h3 {
+            color: $white;   
+            margin: 0;
+            font-size: 24px;
+            font-weight: $f-w-medium;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            white-space: nowrap;
+        }
+        p {
+            font-size: 14px;
+            color: $lighterBlue;
+            font-weight: $f-w-medium;
+            margin: 7px 0 0 0;
+        }
+    }
+    .PhotoFooter {
+        padding: 0;
+        p {
+            padding: 8px 3px;
+            background-color: $darkBlue;
+            margin: 0;
+        } 
+        a {
+            color: $lighterBlue;
+            font-size: 14px;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 100%;
+            line-height: 1;
+        }
+    }
+}
